@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.login-container {
+    width: 100%;
+
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 164px;
+
+}
+
+#hero-image {
+    
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    background: transparent;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+    
+}
+
+
+
+/* right side */
+
+#company-logo{
+    width: 55%;
+    padding: 20px 0px;
+}
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text{
+width: 100%;
+text-align: left;
+font: normal normal 300 40px/47px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+margin-bottom: 30px;
+opacity: 1;
+
+}
+
+.highlight-hero-text{
+    font: normal normal 900 40px/53px Roboto;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.form-control{
+width: 90%;
+height: 49px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #ADADAD;
+border-radius: 5px;
+opacity: 1;
+
+
+}
+
+.form-text{
+text-align: left;
+font: normal normal normal 25px/33px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+.login{
+    display: flex;
+    width: 90%;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn{
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.forgot-password-btn{
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
+
+
+
+.register-text{
+text-align: left;
+font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #ADADAD;
+opacity: 1;
+}
+
+
+/* multiple class use */
+
+.highlight-text{
+    color: #C8242F;
+}
+
+
+
+
+/* responsiveness */
+@media (max-width: 1300px) {
+    .main-div{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .hero-text{
+        font: normal normal 300 30px/35px Roboto;
+        
+    }
+
+    .highlight-hero-text{
+        font: normal normal 900 35px/40px Roboto;
+    }
+}
+
+

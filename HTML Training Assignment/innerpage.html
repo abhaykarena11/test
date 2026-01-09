@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/innerpage.css">
+    <title>Inner-page</title>
+</head>
+<body>
+    <div class="inner-container">
+        <nav class="nav-container ">
+            <div class="nav-left ">
+                <img src="images/menu-bar.svg" alt="menu-bar" class="menu-bar" id="menuToggle">
+                <img src="images/logo.svg" alt="company-logo" class="company-logo">
+            </div>
+            <div class="nav-center ">
+                <img src="images/search-icon.svg" alt="search-icon">
+                <input type="text" placeholder="Search" class="nav-input">
+            </div>
+
+
+            <div class="nav-right nav-right-desktop">
+                <img src="images/notification-icon.svg" alt="notification-icon" class="notification-icon">
+                <img src="images/profile.png" alt="user-profile">
+
+                <div class="profile">
+                    <div>John Doe</div>
+                    <img src="images/downward-arrow.svg" alt="downward-arrow">
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="side-bar">
+
+              <div class="nav-right nav-right-mobile">
+                <img src="images/notification-icon.svg" alt="notification-icon" class="notification-icon">
+                <img src="images/profile.png" alt="user-profile">
+            
+                <div class="profile">
+                    <div>John Doe</div>
+                    <img src="images/downward-arrow.svg" alt="downward-arrow">
+                </div>
+            </div>
+                <a href="dashboard.html" class="btn side-bar-btn" type="button">
+                    <img src="images/dashboard-default.svg" alt="dashboard-default-icon" class="icon-default">
+                    <img src="images/dashboard-active.svg" alt="dashboard-active-icon" class="icon-active">
+                    <span class="m-0">Dashboard</span>
+                </a>
+
+                <a href="innerpage.html" class="btn side-bar-btn " id="active-btn" type="button">
+                    <img src="images/graph-default.svg" alt="analysis-default-icon" class="icon-default">
+                    <img src="images/graph-active.svg" alt="analysis-active-icon" class="icon-active">
+                    <span class="m-0">Analysis</span>
+                </a>
+
+                <a href="#" class="btn side-bar-btn" type="button">
+                    <img src="images/inbox-default.svg" alt="inbox-default-icon" class="icon-default">
+                    <img src="images/inbox-active.svg" alt="inbox-active-icon" class="icon-active">
+                    <span class="m-0">Inbox</span>
+                </a>
+
+                <a href="#" class="btn side-bar-btn" type="button">
+                    <img src="images/clock-default.svg" alt="history-default-icon" class="icon-default">
+                    <img src="images/clock-active.svg" alt="history-active-icon" class="icon-active">
+                    <span class="m-0">History</span>
+                </a>
+
+                <a href="#" class="btn side-bar-btn" type="button">
+                    <img src="images/user-default.svg" alt="user-default-icon" class="icon-default">
+                    <img src="images/user-active.svg" alt="user-active-icon" class="icon-active">
+                    <span class="m-0">Users</span>
+                </a>
+
+                <a href="#" class="btn side-bar-btn" type="button">
+                    <img src="images/maintenance-default.svg" alt="maintenance-default-icon" class="icon-default">
+                    <img src="images/maintenance-active.svg" alt="maintenance-active-icon" class="icon-active">
+                    <span class="m-0">Maintenance</span>
+                </a>
+
+                <a href="#" class="btn side-bar-btn" type="button">
+                    <img src="images/setting-default.svg" alt="setting-default-icon" class="icon-default">
+                    <img src="images/setting-active.svg" alt="setting-active-icon" class="icon-active">
+                    <span class="m-0">Setting</span>
+                </a>
+
+            </div>
+
+          <div class="dashboard">
+            <h2>Analysis</h2>
+
+            <div class="form-container">
+                <div class="row gy-4 one-column">
+                <h3>One Column</h3>
+                        <div class="col-12">
+                          <input type="text" class="form-control" placeholder="Name" >
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select col-12 droapdown">
+                                <option selected>Droapdown</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div> 
+                        <div class="col-12">
+                            <textarea class="form-control" id="" placeholder="Multiple line" rows="5"></textarea>
+                        </div>
+                </div>
+                <div class="row gy-4 two-column">
+                    <h3>Two Column</h3>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Name" >
+                      </div>
+                      <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Username" >
+                      </div>
+                      <div class="col-6">
+                        <input type="password" class="form-control" placeholder="Password" >
+                      </div>
+                      <div class="col-6">
+                        <select class="form-select col-12 droapdown">
+                            <option selected>Droapdown</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div> 
+                </div>
+
+                <div class="row gy-4 three-column">
+                    <h3>Three Column</h3>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Focus" >
+                      </div>
+                      <div class="col-4">
+                        <input type="password" class="form-control" placeholder="Password" >
+                      </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control border-dotted" placeholder="Disabled" disabled>
+                      </div>
+                </div>
+                <div class="row gy-4 four-column">
+                    <h3>Four Column</h3>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Designation" >
+                      </div>
+                    
+                      <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Name" >
+                        <div class="mt-2 ms-2 text-secondary" style="font-size:12px;">
+                          Enter your full Name as per ID
+                        </div>
+                      </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="Username" >
+                      </div>
+                      <div class="col-3">
+                        <select class="form-select col-12 droapdown">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div> 
+                </div>
+
+                <div class="other-element">
+                    <h3>Other Design elements</h3>
+
+                      <div class="file-upload">
+                        <h4 class="fw-semibold fs-5">File Upload</h4>
+                      
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                          
+                          <input type="file" id="uploadFile" class="d-none">
+                      
+        
+                          <label for="uploadFile" class="upload-btn d-flex align-items-center gap-2">
+                            <img src="images/cloud-upload-icon.svg" alt="upload" width="16">
+                            <span>Upload</span>
+                          </label>
+
+                          <span class="text-muted small">No item Selected</span>
+                        </div>
+                      </div>
+
+                      <div class="radio-btn">
+                        <h4 class="fw-semibold fs-5">Radio Button</h4>
+                      
+                        <div class="d-flex gap-4">
+                          <label class="custom-radio">
+                            <input type="radio" name="radioOption">
+                            <span></span>
+                            Option 1
+                          </label>
+                      
+                          <label class="custom-radio">
+                            <input type="radio" name="radioOption" checked>
+                            <span></span>
+                            Option 2
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="checkbox">
+                        <h4 class="fw-semibold fs-5">Checkbox</h4>
+                      
+                        <div class="d-flex gap-4 align-items-center">
+                          
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="opt1">
+                            <label class="form-check-label" for="opt1">Option 1</label>
+                          </div>
+                      
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="opt2" checked>
+                            <label class="form-check-label" for="opt2">Option 2</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="snackbar-container">
+                        <div class="row gy-2 gx-4 snackbar">
+                          <h4 class="fw-semibold fs-5">snackbar</h4>
+                      
+                          <div class="col-6 ">
+                            
+                            <div class="alert alert-danger" style="background:#fff; border:1px solid #FF3535; color:#FF3535;">
+                              <img src="images/error-icon.svg" alt="error-icon">
+                              This is an error message!
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="alert alert-danger" style="background:#fff; border:1px solid #00B9E1; color:#00B9E1;">
+                              <img src="images/info-icon.svg" alt="info-icon" >
+                              This is an information message!</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="alert alert-danger" style="background:#fff; border:1px solid #FFA800; color:#FFA800;">
+                              <img src="images/warning-icon.svg" alt="warning-icon">
+                              This is an warning message!
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="alert alert-danger" style="background:#fff; border:1px solid #00AF27; color:#00AF27;">
+                              <img src="images/success-icon.svg" alt="success-icon">
+                              This is a Sucess message!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="call-to-action">
+                        <h4 class="fw-semibold fs-5 mb-4">Call to action</h4>
+                        <div class="call-to-action-btn-container">
+                        <button type="button" class="btn call-to-action-btn">Primary</button>
+                        <button type="button" class="btn call-to-action-btn">Secondary</button>
+                        </div>
+                      </div>
+
+                      <div class="tab-section">
+                        <h4 class="fw-semibold fs-5">Tabs</h4>
+                        <ul class="nav nav-tabs border-0">
+                          <li class="nav-tab-item test me-3">
+                            <button class="nav-link  border-0">
+                              Tab 1
+                            </button>
+                          </li>
+                          <li class="nav-tab-item test me-3">
+                            <button class="nav-link border-0">
+                              Tab 2
+                            </button>
+                          </li>
+                          <li class="nav-tab-item test me-3">
+                            <button class="nav-link border-0">
+                              Tab 3
+                            </button>
+                          </li>
+                        </ul>
+                        
+                        <hr class="mt-0">
+                        
+                        <!-- Content -->
+                        <div class="pt-3">
+                          <p class="text-muted">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, distinctio. Facere sed earum voluptas omnis, cumque placeat saepe, laborum et cum dolorem nihil. Aperiam totam ratione natus sed, praesentium eius laborum excepturi odit quod error expedita dolores dolorem eaque quas debitis officiis? Illo aut quo laborum dignissimos? Iure rem reiciendis molestias voluptatibus eos fugiat laborum. Saepe ut eveniet accusantium possimus voluptates! Sed quos accusantium iusto.
+                          </p>
+                        </div>
+
+                      </div>
+                      
+                </div>
+
+            </div>
+          </div>
+
+    </div>
+        
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custome.js"></script>
+    
+</body>
+</html>

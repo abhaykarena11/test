@@ -1,0 +1,436 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* main */
+.dashboard-container{
+    width: 100%;
+}
+
+
+/* nav */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 30px;
+    height: 80px;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.menu-bar{
+    width: 20px;
+    height: 24px;
+}
+
+.company-logo{
+    width: 142px;
+    height: 30px;
+}
+.nav-center{
+    width: 80%;
+    display: flex;
+    height: 20px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-center img{
+    height: 16px;
+    width: 16px;
+}
+
+.nav-input{
+    width: 90%;
+    border: none;
+
+    :hover{
+        border: 0px solid white;
+    }
+}
+
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification-icon{
+    margin-right: 40px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+
+}
+
+/* side bar */
+
+.side-bar{
+    width: 242px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.side-bar-btn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+width: 183px;
+height: 43px;
+
+border-radius: 5px;
+}
+
+#active-btn{
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    color: #C8242F;
+}
+#active-btn .icon-active{
+    display: inline-block;
+}
+#active-btn .icon-default{
+    display: none;
+}
+
+.side-bar-btn img{
+    width: 18px;
+    height: 18px;
+}
+
+.side-bar-btn:hover{
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    color: #C8242F;
+}
+
+
+.side-bar-btn img{
+    width: 18px;
+    height: 18px;
+}
+
+/* Hide active image by default */
+.icon-active {
+    display: none;
+}
+
+/* Show active image and hide default on hover */
+.side-bar-btn:hover .icon-active {
+    display: inline-block;
+}
+
+.side-bar-btn:hover .icon-default {
+    display: none;
+}
+
+
+
+/* Dashboard */
+
+.dashboard{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+
+
+/* about-section */
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 116px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.about-box-icons{
+    width: 45px;
+    height: 45px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-number{
+    
+        font-size: 25px;
+        font-weight: 500;
+    
+    
+}
+
+/* summaryc section */
+
+/* graph */
+
+.graph{    
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.graph-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graph-time-log{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.graph img {
+    flex: 1;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.tab {
+    cursor: pointer;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    border-bottom: 2px solid transparent;
+}
+
+
+.tab:hover {
+    color: #e53935;
+    border-bottom-color: #e53935;
+  }
+  
+.tab.active {
+    color: #e53935;
+    border-bottom-color: #e53935;
+  }
+
+
+  /* chart */
+
+  .pie-chart{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+.pie-chart-header{
+    align-self: flex-start; 
+}
+
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 20px;               
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    flex: 1 1 200px;         /* flexible width, min 200px */
+          /* optional max width */
+}
+
+.pie-chart-img{
+    height: 80%;
+}
+  
+  .box {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  
+
+  /* invoices */
+  .invoice-card {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px;
+  }
+
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .invoice-header h5 {
+    margin: 0;
+    font-weight: 650;
+  }
+
+  .view-all {
+    color: #C8242F;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .table th {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+color: #ADADAD;
+    font-weight: 400;
+  }
+
+  .table td {
+    vertical-align: middle;
+    font-size: 15px;
+    letter-spacing: 0px;
+color: #3E3E3E;
+  }
+
+  .badge-paid {
+    background-color: #e6fffa;
+    color: #22c55e;
+  }
+
+  .badge-failed {
+    background-color: #ffecec;
+    color: #ff4d4f;
+  }
+
+  .badge-pending {
+    background-color: #f1f3f5;
+    color: #adb5bd;
+  }
+
+  .amount {
+    text-align: right;
+  }
+
+  .table tr {
+    border-bottom: 1px solid #e9ecef;
+  }
+
+
+  /* Sidebar hidden below 1300px */
+@media (max-width:1300px) {
+    .side-bar {
+        border-radius: 5px;
+        left: -260px;
+        position: absolute;
+        height: 100vh;
+        background: #fff;
+        z-index: 2;
+        transition: left 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .side-bar.active {
+        left: 0;
+    }
+
+    /* hide nav-right in navbar */
+    .nav-right-desktop {
+        display: none;
+    }
+
+    /* show nav-right inside sidebar */
+    .nav-right-mobile {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width:1301px) {
+    .nav-right-mobile {
+        display: none;
+    }
+}
+
+
+  @media (max-width:900px) {
+
+    .nav-container{
+
+        margin: 20px 10px;
+    }
+
+    .nav-left{
+        gap: 10px;
+    }
+
+    .company-logo{
+        width: 100px;
+        height: 30px;
+    }
+
+    .dashboard{
+        padding: 5px;
+    }
+  }
+
+  @media (max-width:540px) {
+    .nav-center{
+        gap: 5px;
+    }
+    .nav-center img{
+        width: 10px;
+        height: 10px;
+    }
+    .nav-input{
+        width: 50%;
+    }
+
+    .nav-right{
+        gap: 6px;
+    }
+
+    .notification-icon{
+        margin-right: 10px;
+    }
+  }
+
