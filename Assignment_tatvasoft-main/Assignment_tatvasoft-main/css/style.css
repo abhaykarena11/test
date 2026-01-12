@@ -1,0 +1,172 @@
+/* remove default margin and padding By browser  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ 
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    background: #FAFAFA;  
+}
+
+
+/* it conatin left-side and right-side content */
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 164px;
+    padding: 10px 0px;
+}
+
+
+/* left side */
+.left-side{
+    /* flex bcz make img in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero-image {
+    margin: 10px 0px;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    background: transparent;
+    border: 20px solid #FFFFFF;
+}
+
+
+/* right side */
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#company-logo{
+    width: 55%;
+    padding: 20px 0px;
+}
+
+
+/* right-side hero text */
+.hero-text{
+width: 100%;
+text-align: left;
+font: normal normal 300 40px/47px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+margin-bottom: 30px;
+}
+.highlight-hero-text{
+    font: normal normal 900 40px/53px Roboto;
+    
+}
+
+
+/* right-side form */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-control{
+width: 90%; 
+background: #FFFFFF ;
+border: 1px solid #ADADAD;
+border-radius: 5px;
+}
+.form-text{
+text-align: left;
+font: normal normal normal 25px/33px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+}
+
+
+/* login button */
+.login{
+    display: flex;
+    width: 90%;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-btn{
+    width: 138px;
+    height: 45px;
+    background: #C8242F;
+    border-radius: 23px;
+}
+.forgot-password-btn{
+    font: normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
+
+
+/* right-side register-section */
+.register-text{
+text-align: left;
+font: normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #ADADAD;
+}
+
+
+/* multiple class use */
+.highlight-text{
+    color: #C8242F;
+}
+
+
+/* responsiveness */
+@media (max-width: 1300px) {
+    .main-div{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
+@media (max-width:500px) {
+
+    .hero-text{
+        font: normal normal 300 30px/35px Roboto;
+        
+    }
+
+    .highlight-hero-text{
+        font: normal normal 900 35px/40px Roboto;
+    }
+}
+
+
+
+/* floated label */
+
+
+.floated-label{
+    position: relative;
+  }
+
+  .floated-label input + label{
+    position: absolute;
+    transform: translateY(-150%);
+    left: 10px;
+  }
+
+  .floated-label input:focus + label{
+    top: 0%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background: #ffffff;
+  }
